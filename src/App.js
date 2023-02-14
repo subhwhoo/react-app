@@ -1,5 +1,12 @@
+import Video from "./Components/Video";
+
 function App() {
-  return <div>Hello World!</div>;
+  return (
+    <div>
+      <div>Hello World!</div>
+      <Video></Video>
+    </div>
+  );
 }
 
 //Always use Uppercase for component names
