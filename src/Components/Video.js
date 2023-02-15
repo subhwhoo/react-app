@@ -1,15 +1,17 @@
-// import "./Video.css";
+import "./Video.css";
 
-export default function Video({ title, bgColor }) {
-  let name = "Subham Chowdhury";
-  let bg = "dark";
+export default function Video({ title, channel, views, time }) {
   return (
-    <>
-      <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
-      <div style={{ backgroundColor: bgColor }}>
-        {title} by {name}
+    <div className={"container"}>
+      <div className="pic">
+        <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
       </div>
-    </> //fragment
+      <div className="title">title {title}</div>
+      <div className="channel">Channel {channel}</div>
+      <div className="views">
+        {views} views <span>.</span> {time}
+      </div>
+    </div>
   );
 }
 

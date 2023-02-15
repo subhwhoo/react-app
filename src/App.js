@@ -1,11 +1,22 @@
 import Video from "./Components/Video";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <div>Hello World!</div>
-      <Video bgColor={"red"} title={"React Tutorial 2"}></Video>
-      <Video bgColor={"yellow"} title={"React Tutorial 2"}></Video>
+    <div className={"App"}>
+      <div>Videos</div>
+      <Video
+        title={"React Tutorial 2"}
+        views={"10K"}
+        channel={"Subham Chowdhury"}
+        time={"1 days ago"}
+      ></Video>
+      <Video
+        title={"React Tutorial 2"}
+        views={"200K"}
+        channel={"Subham Chowdhury"}
+        time={"2 days ago"}
+      ></Video>
     </div>
   );
 }
