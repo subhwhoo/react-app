@@ -1,6 +1,8 @@
 import Video from "./Components/Video";
 import "./App.css";
 import videos from "./data/data";
+import PlayButton from "./Components/PlayButton";
+import { clear } from "@testing-library/user-event/dist/clear";
 
 function App() {
   return (
@@ -17,6 +19,20 @@ function App() {
           id={video.id}
         ></Video>
       ))}
+      <div style={{ clear: "both" }}>
+        <PlayButton
+          message={"Play Button Clicked"}
+          onClick={() => alert("Play button")}
+        >
+          Play
+        </PlayButton>
+        <PlayButton
+          message={"Pause Button Clicked"}
+          onClick={() => alert("Pause button")}
+        >
+          Pause
+        </PlayButton>
+      </div>
     </div>
   );
 }
