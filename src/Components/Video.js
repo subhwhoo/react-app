@@ -1,6 +1,14 @@
 import "./Video.css";
 
-export default function Video({ title, id, channel, views, time, verified }) {
+export default function Video({
+  title,
+  id,
+  channel,
+  views,
+  time,
+  verified,
+  children,
+}) {
   //   Conditional Rendering
   // if (verified) {
   //   channelJSX = <div className="channel">{channel} ✅</div>;
@@ -26,6 +34,7 @@ export default function Video({ title, id, channel, views, time, verified }) {
       </div>
       <div className="views">
         {views} views <span>.</span> {time}
+        <div>{children}</div>
       </div>
     </div>
   );

@@ -17,21 +17,30 @@ function App() {
           time={video.time}
           verified={video.verified}
           id={video.id}
-        ></Video>
+        >
+          <PlayButton
+            onPlay={() => console.log("Playing ", video.title)}
+            onPause={() => console.log("Paused ", video.title)}
+          >
+            {video.title}
+          </PlayButton>
+        </Video>
       ))}
       <div style={{ clear: "both" }}>
-        <PlayButton
-          message={"Play Button Clicked"}
-          onClick={() => alert("Play button")}
-        >
-          Play
-        </PlayButton>
-        <PlayButton
-          message={"Pause Button Clicked"}
-          onClick={() => alert("Pause button")}
-        >
-          Pause
-        </PlayButton>
+        {/*<PlayButton*/}
+        {/*  message={"Play Button Clicked"}*/}
+        {/*  onPlay={() => alert("Play button")}*/}
+        {/*  onPause={() => alert("Pause button")}*/}
+        {/*>*/}
+        {/*  Play*/}
+        {/*</PlayButton>*/}
+
+        {/*<PlayButton*/}
+        {/*  message={"Pause Button Clicked"}*/}
+        {/*  onClick={() => alert("Pause button")}*/}
+        {/*>*/}
+        {/*  Pause*/}
+        {/*</PlayButton>*/}
       </div>
     </div>
   );
