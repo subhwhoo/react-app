@@ -32,5 +32,4 @@ function App() {
   );
 }
 
-//Always use Uppercase for component names
 export default App;
