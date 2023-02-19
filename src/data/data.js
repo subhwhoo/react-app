@@ -32,5 +32,4 @@ const videos = [
     verified: true,
   },
 ];
-
 export default videos;
